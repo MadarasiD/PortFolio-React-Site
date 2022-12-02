@@ -4,9 +4,10 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import cssBattle  from '../Home/cssb.svg';
-import Udemy from '../Home/udemy.svg';
+import Udemy from '../Home/udemy.png';
 import Fmentor from '../Home/Fmentor.svg';
 import { TypeAnimation } from 'react-type-animation';
+import './Profile.css'
 
 
 
@@ -20,7 +21,7 @@ export default function Profile() {
                     <div classname="colz-icon">
 
                     <a href="https://www.facebook.com/daniel.madarasi.1/" target="_blank">
-                        <FontAwesomeIcon icon={faFacebook} />
+                        <FontAwesomeIcon icon={faFacebook} style={{width: "30px"}} />
                     </a>
 
                     <a href="https://www.linkedin.com/in/d%C3%A1niel-madarasi-a8b5661b2/" target="_blank">
@@ -32,15 +33,15 @@ export default function Profile() {
                     </a>
 
                     <a href="https://cssbattle.dev/player/p2yKgsM6Q4WIjoIJqYFVXT0D4O43" target="_blank">
-                    <img src={cssBattle} alt="" />
+                    <img src={cssBattle} alt="" style={{width: "90px"}}/>
                     </a>
 
                     <a href="https://www.udemy.com/user/daniel-madarasi/" target="_blank">
-                    <img src={Udemy} alt="" />
+                    <img src={Udemy} alt="" style={{width: "20px"}}/>
                     </a>
 
                     <a href="https://www.frontendmentor.io/profile/MadarasiD" target="_blank">
-                    <img src={Fmentor} alt="" />
+                    <img src={Fmentor} alt="" style={{width: "130px", background: "#fff", borderRadius: "5px"}}/>
                     </a>
 
                     </div>
