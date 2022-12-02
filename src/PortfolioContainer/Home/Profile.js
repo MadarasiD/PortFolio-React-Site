@@ -17,6 +17,8 @@ export default function Profile() {
             <div className="profile-details">
                 <div className="colz">
 
+                    <div classname="colz-icon">
+
                     <a href="https://www.facebook.com/daniel.madarasi.1/" target="_blank">
                         <FontAwesomeIcon icon={faFacebook} />
                     </a>
@@ -40,6 +42,10 @@ export default function Profile() {
                     <a href="https://www.frontendmentor.io/profile/MadarasiD" target="_blank">
                     <img src={Fmentor} alt="" />
                     </a>
+
+                    </div>
+
+                   
                 </div>
 
                 <div className="profile-detail-name">
@@ -87,9 +93,20 @@ export default function Profile() {
                                     {' '}
                                     come on{' '}
                                 </button>
+
+                                <a href="resume.pdf" download='resume.pdf'>
+                                    <button className='btn highlighted-btn'>Get Resume</button>
+                                </a>
                     </div>
 
             </div>
+
+                    <div className="profile-pic">
+                        <div className="profile-pic-bg">
+
+                        </div>
+                    </div>
+
         </div>
     </div>
   )
