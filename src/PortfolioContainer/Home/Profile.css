@@ -115,7 +115,7 @@
 
     .profile-container {
 
-        height: 40vh;
+        height: 60vh;
 
     }
     
@@ -143,6 +143,14 @@
         padding: 11px;
         z-index: 700;
 
+    }
+
+    .profile-details-role h1 {
+
+        font-size: 12px;
+        max-width: 330px;
+        height: 60px;
+    
     }
 
 }
