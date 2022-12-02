@@ -16,43 +16,12 @@ export default function Profile() {
     <div className='profile-container'>
         <div className="profile-parent">
             <div className="profile-details">
-                <div className="colz">
-
-                    <div classname="colz-icon">
-
-                    <a href="https://www.facebook.com/daniel.madarasi.1/" target="_blank">
-                        <FontAwesomeIcon icon={faFacebook} style={{width: "30px"}} />
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/d%C3%A1niel-madarasi-a8b5661b2/" target="_blank">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-
-                    <a href="https://github.com/MadarasiD" target="_blank">
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
-
-                    <a href="https://cssbattle.dev/player/p2yKgsM6Q4WIjoIJqYFVXT0D4O43" target="_blank">
-                    <img src={cssBattle} alt="" style={{width: "90px"}}/>
-                    </a>
-
-                    <a href="https://www.udemy.com/user/daniel-madarasi/" target="_blank">
-                    <img src={Udemy} alt="" style={{width: "20px"}}/>
-                    </a>
-
-                    <a href="https://www.frontendmentor.io/profile/MadarasiD" target="_blank">
-                    <img src={Fmentor} alt="" style={{width: "130px", background: "#fff", borderRadius: "5px"}}/>
-                    </a>
-
-                    </div>
-
-                   
-                </div>
+                
 
                 <div className="profile-detail-name">
                         <span className='primary-text'>
                             {' '}
-                            Welcome to my website, my name is <span className='high-text'>Dániel Madarasi</span> 
+                            Welcome to my website,<br /> my name is <br /> <span className='high-text'>Dániel Madarasi</span> 
                         </span>
                 </div>
 
@@ -99,6 +68,39 @@ export default function Profile() {
                                     <button className='btn highlighted-btn'>Get Resume</button>
                                 </a>
                     </div>
+
+                    <div className="colz">
+
+                    <div classname="colz-icon">
+
+                    <a href="https://www.facebook.com/daniel.madarasi.1/" target="_blank">
+                        <FontAwesomeIcon icon={faFacebook} style={{width: "30px", color: '#fff', margin: '20px 25px 8px 0'}} classname="font-icon"/>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/d%C3%A1niel-madarasi-a8b5661b2/" target="_blank">
+                        <FontAwesomeIcon icon={faLinkedin} classname="font-icon" style={{color: '#fff',margin: '20px 25px 8px 0'}}/>
+                    </a>
+
+                    <a href="https://github.com/MadarasiD" target="_blank">
+                        <FontAwesomeIcon icon={faGithub} classname="font-icon" style={{color: '#fff',margin: '20px 25px 8px 0'}}/>
+                    </a>
+
+                    <a href="https://cssbattle.dev/player/p2yKgsM6Q4WIjoIJqYFVXT0D4O43" target="_blank">
+                    <img src={cssBattle} alt="" style={{width: "35px", color: '#fff',margin: '20px 25px 8px 0'}} classname="font-icon"/>
+                    </a>
+
+                    <a href="https://www.udemy.com/user/daniel-madarasi/" target="_blank">
+                    <img src={Udemy} alt="" style={{width: "22px",margin: '20px 25px 8px 0'}} classname="font-icon"/>
+                    </a>
+
+                    <a href="https://www.frontendmentor.io/profile/MadarasiD" target="_blank">
+                    <img src={Fmentor} alt="" style={{width: "25px", background: "#fff", borderRadius: "100px",margin: '20px 25px 8px 0'}} classname="font-icon"/>
+                    </a>
+
+                    </div>
+
+                   
+                </div>
 
             </div>
 

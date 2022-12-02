@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 10%;
+    height: 80vh;
     min-height: fit-content;
     background: rgb(1, 20, 31);
 
@@ -34,8 +34,10 @@
 
 .profile-details-role h1 {
 
-    font-size: 20px;
+    font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 350px;
+    height: 90px;
 
 }
 
@@ -51,9 +53,60 @@
 
 }
 
-.colz-icon a {
+.profile-options .highlighted-btn {
 
-    width: 15px;
-    height: 15px;
+    margin: 0 0 0 28px;
+
+}
+
+.profile-options .highlighted-btn:hover {
+
+    margin: 0 0 0 28px;
+    background: rgb(146, 73, 73);
+
+}
+
+.profile-pic {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0 0 100px;
+    box-shadow: 0 1px 1px 1px rgb(184, 164, 76);
+
+}
+
+.profile-pic-bg {
+
+    height: 92%;
+    width: 92%;
+    background: url('../../assets/Home/me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 50%;
+
+}
+
+.profile-pic-bg:hover {
+
+    transform: scale(1.07);
+    transition: 1s ease-out;
+
+}
+
+.colz .colz-icon a .font-icon{
+
+    color: #fff;
+    padding: 8px 8px 8px 0;
+
+}
+
+.colz .colz-icon .font-icon {
+
+    transform: scale(1.5);
 
 }
