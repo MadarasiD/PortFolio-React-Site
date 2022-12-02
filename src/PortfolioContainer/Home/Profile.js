@@ -5,7 +5,8 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import cssBattle  from '../Home/cssb.svg';
 import Udemy from '../Home/udemy.svg';
-import Fmentor from '../Home/Fmentor.svg'
+import Fmentor from '../Home/Fmentor.svg';
+import { TypeAnimation } from 'react-type-animation';
 
 
 
@@ -39,6 +40,45 @@ export default function Profile() {
                     <a href="https://www.frontendmentor.io/profile/MadarasiD" target="_blank">
                     <img src={Fmentor} alt="" />
                     </a>
+                </div>
+
+                <div className="profile-detail-name">
+                        <span className='primary-text'>
+                            {' '}
+                            Welcome to my website, my name is <span className='high-text'>Dániel Madarasi</span> 
+                        </span>
+                </div>
+
+                <div className="profile-details-role">
+                        <span className="primary-text">
+                        {' '}
+
+                        <h1>
+                            <TypeAnimation
+                                sequence={[
+                                'Frontend Developer', // Types 'Frontend Developer'
+                                1000, // Waits 1s
+                                'HTML', // Deletes 'Frontend Developer' and types 'HTML'
+                                2000, // Waits 2s
+                                'CSS',
+                                2000,
+                                'JAVASCRIPT',
+                                2000,
+                                'REACT',
+                                2000,
+                                () => {
+            
+                                }
+                                ]}
+                                wrapper="div"
+                                cursor={true}
+                                repeat={Infinity}
+                                style={{ fontSize: '2em' }}
+                                />
+
+                        </h1>
+
+                        </span>
                 </div>
             </div>
         </div>
