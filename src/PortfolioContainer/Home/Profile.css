@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 80vh;
+    height: 60vh;
     min-height: fit-content;
     background: rgb(1, 20, 31);
 
@@ -72,8 +72,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    height: 380px;
-    width: 380px;
+    height: 280px;
+    width: 280px;
     margin: 0 0 0 100px;
     box-shadow: 0 1px 1px 1px rgb(184, 164, 76);
 
@@ -109,4 +109,52 @@
 
     transform: scale(1.5);
 
+}
+
+@media screen and (max-width: 1110px) {
+
+    .profile-container {
+
+        height: 40vh;
+
+    }
+    
+    .profile-pic {
+
+        margin: 0 0 0 80px;
+
+    }
+
+    .profile-detail-name {
+
+        font-size: 15px;
+
+    }
+
+    .profile-details-role .primary-text {
+
+        font-size: 12px;
+
+    }
+
+    .profile-options .btn {
+
+        width: 120px;
+        padding: 11px;
+        z-index: 700;
+
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .profile-pic {
+
+        height: 220px;
+        width: 220px;
+        margin: 0 0 0 40px;
+
+    }
+    
 }
