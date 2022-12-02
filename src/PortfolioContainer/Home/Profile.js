@@ -51,35 +51,44 @@ export default function Profile() {
 
                 <div className="profile-details-role">
                         <span className="primary-text">
-                        {' '}
+                            {' '}
 
-                        <h1>
-                            <TypeAnimation
-                                sequence={[
-                                'Frontend Developer', // Types 'Frontend Developer'
-                                1000, // Waits 1s
-                                'HTML', // Deletes 'Frontend Developer' and types 'HTML'
-                                2000, // Waits 2s
-                                'CSS',
-                                2000,
-                                'JAVASCRIPT',
-                                2000,
-                                'REACT',
-                                2000,
-                                () => {
+                            <h1>
+                                <TypeAnimation
+                                    sequence={[
+                                    'Frontend Developer 💻', // Types 'Frontend Developer'
+                                    2000, // Waits 1s
+                                    'HTML ✅', // Deletes 'Frontend Developer' and types 'HTML'
+                                    2000, // Waits 2s
+                                    'CSS ✅',
+                                    2000,
+                                    'JAVASCRIPT ✅',
+                                    2000,
+                                    'REACT ✅',
+                                    2000,
+                                    () => {
             
-                                }
-                                ]}
-                                wrapper="div"
-                                cursor={true}
-                                repeat={Infinity}
-                                style={{ fontSize: '2em' }}
-                                />
+                                    }
+                                    ]}
+                                    wrapper="div"
+                                    cursor={true}
+                                    repeat={Infinity}
+                                    style={{ fontSize: '2em' }}
+                                    />
 
-                        </h1>
+                            </h1>
+
 
                         </span>
                 </div>
+
+                    <div className="profile-options">
+                                <button className='btn primary-btn'>
+                                    {' '}
+                                    come on{' '}
+                                </button>
+                    </div>
+
             </div>
         </div>
     </div>
