@@ -10,7 +10,14 @@ export default function Header() {
     const [ selectedScreen, setSelectedScreen ] = useState(0)
     const [ showHeaderOptions, setShowHeaderOptions ] = useState(false)
 
-    const
+    const updateCurrentScreen = (currentScreen)=> {
+        if(!currentScreen || !currentScreen.sceenInView)
+        return;
+        let screenIndex = GET_SCREEN_INDEX(currentScreen.sceenInView)
+        if(screenIndex < 0)
+        return
+    }
+    let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen)
 
   return (
     <div>
