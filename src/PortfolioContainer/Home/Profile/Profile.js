@@ -61,7 +61,7 @@ export default function Profile() {
                     <div className="profile-options">
                                 <button className='btn primary-btn'>
                                     {' '}
-                                    come on{' '}
+                                    Let's work together{' '}
                                 </button>
 
                                 <a href="resume.pdf" download='resume.pdf'>
