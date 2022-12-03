@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import cssBattle  from '../Home/cssb.svg';
-import Udemy from '../Home/udemy.png';
-import Fmentor from '../Home/Fmentor.svg';
+import cssBattle  from './cssb.svg';
+import Udemy from './udemy.png';
+import Fmentor from './Fmentor.svg';
 import { TypeAnimation } from 'react-type-animation';
 import './Profile.css'
 

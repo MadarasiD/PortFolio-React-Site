@@ -83,7 +83,7 @@
 
     height: 92%;
     width: 92%;
-    background: url('../../assets/Home/me.jpg');
+    background: url('./me.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;

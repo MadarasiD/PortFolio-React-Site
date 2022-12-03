@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Home/Home.css'
 import Footer from '../Home/Footer/Footer'
-import Profile from '../Home/Profile'
+import Profile from './Profile/Profile'
 
 export default function () {
   return (
