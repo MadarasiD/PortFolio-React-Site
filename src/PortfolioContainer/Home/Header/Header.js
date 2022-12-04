@@ -45,12 +45,27 @@ export default function Header() {
     const switchScreen = (index, screen) => {
         let screenComponent = document.getElementById(screen.screen_name)
         if(!screenComponent)
-        return
-    }
+        return;
+
+        screenComponent.scrollIntoView({ behavior: 'smooth'});
+        setSelectedScreen(index)
+        setShowHeaderOptions(false);
+    };
 
   return (
     <div>
+        <div className="header-option" onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+            <div className="header-parent">
+                <div className="header-hamburger" onClick={()=> setShowHeaderOptions(!showHeaderOptions)}>
+                    <FontAwesomeIcon className='header-hamburger-bars' icon={ faBars }/>
+                </div>
 
+                <div className="header-logo">
+                    <span>Madarasi Dániel</span>
+                </div>
+            </div>
+
+        </div>
     </div>
   )
 }
