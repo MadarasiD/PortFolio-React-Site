@@ -32,6 +32,22 @@ export default function Header() {
         )
     }
 
+    const getHeaderOptionsClass = (index)=> {
+        let classes = 'header-option';
+        if(index < TOTAL_SCREENS.length -1)
+        classes += "header-option-seperator";
+
+        if(selectedScreen === index)
+        classes += "selected-header-option";
+        return
+    }
+
+    const switchScreen = (index, screen) => {
+        let screenComponent = document.getElementById(screen.screen_name)
+        if(!screenComponent)
+        return
+    }
+
   return (
     <div>
 
