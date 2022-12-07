@@ -9,6 +9,7 @@ export const TOTAL_SCREENS = [
 
     },
    
+   
 ]
 
 export const GET_SCREEN_INDEX = (screen_name) => {

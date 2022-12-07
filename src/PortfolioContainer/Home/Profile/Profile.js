@@ -18,7 +18,7 @@ export default function Profile() {
             <div className="profile-details">
                 
 
-                <div className="profile-detail-name">
+                <div className="profile-details-name">
                         <span className='primary-text'>
                             {' '}
                             Welcome to my website,<br /> my name is <br /> <span className='high-text'>Dániel Madarasi</span> 

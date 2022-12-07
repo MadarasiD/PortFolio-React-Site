@@ -1,9 +1,11 @@
-.header.container {
+.header-container {
 
     display: flex;
     justify-content: center;
     height: 140px;
     color: rgb(184, 182, 182);
+    background: rgb(117, 96, 96);
+    position: relative;
 
 }
 
