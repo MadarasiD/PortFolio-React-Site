@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 10%;
+    height: 15%;
     min-height: fit-content;
     background: rgb(1, 20, 31);
     margin-top: -0.5%;
@@ -200,6 +200,7 @@
     .profile-container {
 
         height: 90vh;
+        margin-top: -5%;
 
     }
 

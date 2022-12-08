@@ -2,11 +2,10 @@
 
     display: flex;
     justify-content: center;
-    height: 120px;
+    height: 150px;
     color: rgb(184, 182, 182);
     background: rgb(1, 20, 31);
     position: relative;
-    margin: 0;
 
 }
 
@@ -25,5 +24,52 @@
 
     font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.header-options {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.header-option {
+
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .header-container {
+
+        margin-bottom: 4%;
+
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    
+    .header-container {
+
+        margin-bottom: -5%;
+
+    }
+
+}
+
+@media screen and (min-width: 1023px) {
+    
+    .header-container {
+
+        margin-bottom: 0%;
+
+    }
 
 }
