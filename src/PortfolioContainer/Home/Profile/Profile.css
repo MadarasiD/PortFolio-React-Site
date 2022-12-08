@@ -4,10 +4,10 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 15%;
+    height: 100%;
     min-height: fit-content;
     background: rgb(1, 20, 31);
-    margin-top: -0.5%;
+    margin: -1%;
 
 }
 
@@ -160,7 +160,7 @@
 @media screen and (min-width: 1023px) {
     .profile-container {
 
-        margin-top: -5.8%;        
+        margin-top: -7%;        
 
     }
     
@@ -176,6 +176,12 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    .profile-container {
+
+        margin-top: -4%;        
+
+    }
 
     .profile-pic {
 
