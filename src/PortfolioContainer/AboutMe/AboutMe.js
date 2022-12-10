@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
-import ScrollService from '../../utilities/ScrollService'
+import ScrollService from '../../utilities/ScrollService';
+import Animation from '../../utilities/Animation';
 
-export default function () {
+export default function (props) {
   return (
-    <div>
+    <div className='aboutme-container screen-container'>
+        <div className="about-me-parent">
 
-
+            <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
+        </div>
     </div>
   )
 }
