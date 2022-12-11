@@ -11,7 +11,7 @@
 .screen-sub-heading {
 
     letter-spacing: 3px;
-    margin: 8px 0 18px 0;
+    margin: 8px 0 10px 0;
     font-size: 12px;
     color: rgb(11, 11, 11);
 
@@ -28,6 +28,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
 
@@ -35,19 +36,22 @@
 
 .seperator-line {
 
-    width: 100%;
+    
+    width: 50%;
     height: 2px;
     background-color: #1f2235;
+    display: flex;
+    justify-content: center;
 
 }
 
 .seperator-blob {
 
     height: 10px;
-    width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
+    top: -3px;
 
 }
 
