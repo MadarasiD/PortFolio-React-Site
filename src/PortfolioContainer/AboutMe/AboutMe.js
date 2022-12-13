@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animation from '../../utilities/Animation';
+import './AboutMe.css'
 
 export default function AboutMe(props) {
 
@@ -21,9 +22,18 @@ export default function AboutMe(props) {
     highlights: {
       bullets:[
           "Frontend Developer",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "SASS / SCSS",
+          "Javascript",
+          "GIT",
+          "Node.js",
           "React",
+          "Hosting - Firebase",
+          "Seo - search engine optimization",
       ],
-      heading: "blabla"
+      heading: "Learned skills"
           
     }
 
@@ -52,7 +62,7 @@ export default function AboutMe(props) {
             <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
 
             <div className="about-me-card">
-                <div className="about-me-profile">
+                <div className="about-me-profile"></div>
                     <div className="about-me-details">
                       <span className='about-me-description'> {SCREEN_CONSTSANTS.description} </span>
 
@@ -76,7 +86,7 @@ export default function AboutMe(props) {
                     </div>
 
                     </div>
-                </div>
+                
             </div>
 
         </div>

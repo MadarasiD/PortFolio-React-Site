@@ -1,0 +1,110 @@
+.aboutme-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 20px 0;
+    background: linear-gradient(#ffffff,rgb(1, 20, 31));
+
+}
+
+.about-me-parent {
+
+    max-width: 1000px;
+    width: 60%;
+
+}
+
+.about-me-card {
+
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 20px -1px #1f2235;
+    border-radius: 10px;
+
+}
+
+.about-me-profile {
+
+    width: 100%;
+    background-image: url('./profile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.about-me-details {
+
+    width: 60%;
+    text-align: justify;
+    padding: 30px;
+
+}
+
+.about-me-description {
+
+    font-size: 12px;
+
+}
+
+.about-me-highlights {
+
+    margin: 50px 0;
+
+}
+
+.highlight-heading {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+
+}
+
+.highlight {
+
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 12px;
+
+}
+
+.highlight-blob {
+
+    height: 4px;
+    width: 15px;
+    margin: 0 10px 0 0;
+    background: rgb(121, 20, 20);
+    border-radius: 20px;
+}
+
+.about-me-options {
+
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-options .highlighted-btn {
+
+    margin: 0 0 0 5px;
+    font-size: 8px;
+    padding: 3px 0;
+    width: 65px;
+
+}
+
+.about-me-options .primary-btn {
+
+    width: 65px;
+    font-size: 6px;
+    padding: 3px 0;
+
+}
+

@@ -37,7 +37,7 @@
 .seperator-line {
 
     
-    width: 50%;
+    width: 35vw;
     height: 2px;
     background-color: #1f2235;
     display: flex;
@@ -57,7 +57,7 @@
 
 .seperator-blob div {
 
-    width: 25vw;
+    width: 15vw;
     border-radius: 10px;
     background: linear-gradient(135deg, rgb(227, 141, 54) 60%, rgb(193, 26, 26)) ;
 
