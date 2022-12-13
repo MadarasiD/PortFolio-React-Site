@@ -48,7 +48,7 @@
 
 .about-me-description {
 
-    font-size: 12px;
+    font-size: 24px;
 
 }
 
@@ -61,7 +61,7 @@
 .highlight-heading {
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
+    font-size: 26px;
     margin: 0 0 5px 0;
 
 }
@@ -94,17 +94,97 @@
 .about-me-options .highlighted-btn {
 
     margin: 0 0 0 5px;
-    font-size: 8px;
+    font-size: 10px;
     padding: 3px 0;
-    width: 65px;
+    width: 85px;
 
 }
 
 .about-me-options .primary-btn {
 
-    width: 65px;
+    width: 72px;
     font-size: 6px;
-    padding: 3px 0;
+    padding: 3px 3px;
 
 }
 
+
+@media screen and (max-width: 1110px){
+
+    .about-me-parent {
+
+        width: 88%;
+
+    }
+
+    .about-me-description {
+
+        font-size: 40px;
+    
+    }
+
+    .highlight-heading {
+
+        font-size: 36px;
+
+    }
+    
+}
+
+@media screen and (max-width: 898px){
+
+    .about-me-profile {
+
+        display: none;
+        width: 80%;
+
+    }
+
+    .about-me-details {
+
+        width: 100%;
+
+    }
+
+    .about-me-options .highlighted-btn {
+
+        margin: 0 0 0 5px;
+        font-size: 13px;
+        padding: 3px 0;
+        width: 90px;
+    
+    }
+    
+    .about-me-options .primary-btn {
+    
+        width: 100px;
+        font-size: 8px;
+        padding: 3px 0;
+    
+    }
+    
+}
+
+@media screen and (max-width: 466px) {
+    
+    .about-me-options {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .about-me-options .highlighted-btn {
+
+        margin: 24px 0 0 0 !important;
+
+    }
+
+    .about-me-options .btn {
+
+        width: 100%;
+        font-size: 18px;
+
+    }
+
+}
