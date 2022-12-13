@@ -69,6 +69,49 @@ export default function Resume(props) {
             subHeading: 'Technologies Used: React JS'
         }
 
+    ];
+
+    const resumeDetails = [
+
+        <div className="resume-screen-container">
+            <ResumeHeading heading={'Apáczai Csere János primary school'} fromDate={'2002'} toDate={'2014'}/>
+        </div>,
+        <div className="resume-screen-container">
+            <ResumeHeading heading={'Madarasi'} subHeading={'Frontend Developer'} fromDate={'2022'} toDate={'2022'}/>
+        </div>,
+        <div className='experience-description'>
+            <span className="resume-description-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, inventore! 1
+            </span>
+        </div>,
+
+        <div className="experience-description">
+            <span className="resume-description-text">
+                Experience - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione velit alias id nulla ipsa! Maxime quasi quidem qui rerum earum. 2
+            </span>
+            <br />
+            <span className='resume-description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 3
+            </span>
+            <br />
+            <span className='resume-description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 4
+            </span>
+        </div>,
+        <div className="resume-screen-container programming-skills-container" key='programming-skills'>
+            {programmingSkillDetails.map((skill, index)=> (
+                <div className="skill-parent" key="index">
+                    <div className="heading-bullet"></div>
+                    <span> {skill.skill} </span>
+                    <div className="skill-percentage">
+                        <div style={{width: skill.ratingPercentage + "%"}} className='active-precentage'>
+
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+
     ]
 
     let fadeInScreenHandler = (screen) => {
