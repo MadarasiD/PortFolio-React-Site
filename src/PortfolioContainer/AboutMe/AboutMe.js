@@ -9,12 +9,14 @@ export default function (props) {
 
     if(screen.fadeScreen !== props.id)
     return
-    Animation.animation.fadeInScreen(props.id)
+    Animation.animations.fadeInScreen(props.id)
 
   }
 
+  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+
   return (
-    <div className='aboutme-container screen-container'>
+    <div className='aboutme-container screen-container' id={props.id || ''}>
         <div className="about-me-parent">
 
             <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
