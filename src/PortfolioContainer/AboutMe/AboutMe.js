@@ -13,7 +13,21 @@ export default function (props) {
 
   }
 
-  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  const SCREEN_CONSTANS = {
+    
+    description: '',
+    highlights: {
+      bullets:[
+          "Frontend Developer",
+          "React",
+      ],
+      heading: "blabla"
+          
+    }
+
+  }
 
   return (
     <div className='aboutme-container screen-container' id={props.id || ''}>

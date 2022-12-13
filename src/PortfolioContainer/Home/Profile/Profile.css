@@ -115,8 +115,7 @@
 
     .profile-container {
 
-        height: 60vh;
-        
+        height: 50vh;
 
     }
     
@@ -156,29 +155,23 @@
 
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (max-height: 1365px) {
+
     .profile-container {
 
-        margin-top: -7%;        
+        height: 65vh;
 
     }
-    
+
 }
 
-@media screen and (min-width: 1300px) {
-    .profile-container {
 
-        margin-top: -4%;        
-
-    }
-    
-}
 
 @media screen and (max-width: 900px) {
 
     .profile-container {
 
-        margin-top: -4%;        
+        height: 60vh;    
 
     }
 
@@ -205,7 +198,6 @@
     .profile-container {
 
         height: 90vh;
-        margin-top: -5%;
 
     }
 
@@ -218,7 +210,7 @@
     .profile-parent {
 
         flex-direction: column-reverse; /* Az elemek egymás alá kerülnek */
-        margin: 00px 0 0 0 ;
+        margin: 0px 0 0 0 ;
 
     }
 
@@ -288,3 +280,4 @@
     }
     
 }
+
