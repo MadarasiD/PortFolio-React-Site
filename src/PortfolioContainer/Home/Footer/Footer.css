@@ -5,7 +5,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    background: rgb(20, 17, 17);
+    background: linear-gradient(rgb(1, 20, 31), #ffffff);
     
 }
 
