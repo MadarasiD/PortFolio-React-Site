@@ -51,7 +51,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: -3px;
+    top: -4px;
 
 }
 
@@ -59,6 +59,6 @@
 
     width: 25vw;
     border-radius: 10px;
-    background: rgb(199, 31, 87);
+    background: linear-gradient(135deg, rgb(227, 141, 54) 60%, rgb(193, 26, 26)) ;
 
 }
