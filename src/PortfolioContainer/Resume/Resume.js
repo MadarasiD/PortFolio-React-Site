@@ -10,6 +10,16 @@ export default function Resume(props) {
     const [ selectedBulletIndex, setselectedBulletIndex] = useState(0);
     const [ carousalOffsetStyle, setcarousalOffsetStyle ] = useState({});
 
+    let fadeInScreenHandler = (screen) => {
+
+        if(screen.fadeScreen !== props.id)
+        return
+        Animation.animations.fadeInScreen(props.id)
+    
+      }
+      const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    
+
     const ResumeHeading = (props) => {
         <div className="resume-heading">
             <div className="resume-main-heading">
@@ -128,20 +138,26 @@ export default function Resume(props) {
             <ResumeHeading
                 heading='Teaching'
                 description="lorem5"
+
             />
         </div>
 
     ]
 
-    let fadeInScreenHandler = (screen) => {
+    const handleCarousal = (index) => {
+        let offsetHeight = 360;
+        let newCarousalOffset = {
 
-        if(screen.fadeScreen !== props.id)
-        return
-        Animation.animations.fadeInScreen(props.id)
-    
-      }
-    
-      const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+            style: {transform: 'translateY('+ index * offsetHeight * -1 +'px)'},
+            
+        }
+        setcarousalOffsetStyle(newCarousalOffset);
+        setselectedBulletIndex(index);
+    };
+
+    const getBullets = ()=> {
+
+    }
 
   return (
     <div className='resume-container screen-container' id={props.id || ''}>
