@@ -101,10 +101,11 @@ export default function Resume(props) {
             </span>
             <br />
             <span className='resume-description-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 3
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sint minus sequi temporibus aperiam asperiores distinctio sapiente, vitae quidem dolore consectetur culpa, quasi minima. Earum pariatur voluptas deserunt perferendis. Consequatur reprehenderit laudantium blanditiis, culpa recusandae veritatis repellat laborum vel, voluptate ipsa eveniet hic nisi quis voluptatem porro itaque id eius consequuntur! Illo debitis libero veniam ipsa iure laborum voluptas quo quis odio doloribus asperiores beatae non consectetur, voluptatibus dolorem at, assumenda adipisci est dolore dolorum natus quasi? Fugiat, unde? Ratione veniam et ab reiciendis aperiam nemo expedita, debitis fugiat quibusdam! Architecto earum veniam consectetur, libero harum dolorem odit, dolor nemo similique voluptate, fuga voluptatem! Fugit repellat, autem inventore expedita, suscipit praesentium repellendus, ipsa dolore laboriosam doloribus quasi blanditiis a! Veritatis molestiae qui cupiditate dolores excepturi sed esse necessitatibus, officia deleniti, voluptatem quas perspiciatis ut explicabo incidunt nisi similique unde. Sed ab delectus reiciendis omnis asperiores ea necessitatibus fuga repellendus dolores!
             </span>
             <br />
             <span className='resume-description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque voluptates, fugiat sed, vitae error suscipit unde aliquam impedit ex consequuntur expedita earum accusamus ipsam! lorem150
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 4
             </span>
         </div>,
@@ -148,7 +149,7 @@ export default function Resume(props) {
         let offsetHeight = 360;
         let newCarousalOffset = {
 
-            style: {transform: 'translateY('+ index * offsetHeight * -1 +'px)'},
+            style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
             
         }
         setcarousalOffsetStyle(newCarousalOffset);

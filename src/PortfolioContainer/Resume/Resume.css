@@ -42,3 +42,9 @@
     max-width: 100%;
 
 }
+
+.resume-details-carousal {
+
+    transition: transform 1s ease-out;
+
+}
