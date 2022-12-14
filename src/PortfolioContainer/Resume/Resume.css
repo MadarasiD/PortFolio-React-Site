@@ -1,0 +1,44 @@
+.resume-container {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: fit-content;
+    padding: 120px 0;
+    background: linear-gradient(rgb(1, 20, 31),#eae7e7);
+
+}
+
+.resume-card {
+
+    display: flex;
+    height: 360px;
+    width: 75vw;
+
+}
+
+.resume-bullets {
+
+    height: 100%;
+    box-shadow: 15px 0 9px -10px #181a29;
+    width: 30%;
+
+}
+
+.resume-bullet-detail {
+
+    flex-grow: 1;
+    width: 600px;
+    overflow: hidden;
+    padding: 0 0 0 70px;
+
+}
+
+.experience-description {
+
+    margin: 10px 0 0 0;
+    text-align: justify;
+    max-width: 100%;
+
+}

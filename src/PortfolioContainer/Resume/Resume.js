@@ -14,7 +14,7 @@ export default function Resume(props) {
 
         if(screen.fadeScreen !== props.id)
         return
-        Animation.animations.fadeInScreen(props.id)
+        Animations.animations.fadeInScreen(props.id)
     
       }
       const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
@@ -164,8 +164,8 @@ export default function Resume(props) {
             >
 
                 <img 
-                src={require(`../../assets/Resume/${bullet.logoSrc}`)} 
-                alt="bullet logo" 
+                src={require(`../../assets/Resume/${bullet.logoSrc}`).default} 
+                alt="bullet-logo" 
                 className="bullet-logo" />
 
             </div>
