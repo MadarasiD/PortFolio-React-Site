@@ -156,6 +156,31 @@ export default function Resume(props) {
     };
 
     const getBullets = ()=> {
+        return resumeBullets.map((bullet, index)=>(
+            <div 
+            onClick={()=>handleCarousal(index)}
+            className={index === selectedBulletIndex ? 'bellet selected-bullet' : 'bullet'}
+            key={index}
+            >
+
+                <img 
+                src={require(`../../assets/Resume/${bullet.logoSrc}`)} 
+                alt="bullet logo" 
+                className="bullet-logo" />
+
+            </div>
+        ))
+    }
+
+    const getResumeScreen = () => {
+
+        return (
+
+            <div className="resume-details-carousal" style={carousalOffsetStyle.style}>
+                {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+            </div>
+
+        )
 
     }
 
@@ -165,6 +190,22 @@ export default function Resume(props) {
         <div className="resume-content">
 
                 <ScreenHeading title={'Resume'} subHeading={'My biographical description'} />
+
+                <div className="resume-card">
+                    <div className="resume-bullets">
+                        <div className="bullet-container">
+                            <div className="bullet-icons">
+
+                            </div>
+
+                            <div className="bullets"> {getBullets()} </div>
+                        </div>
+                    </div>
+
+                    <div className="resume-bullet-detail">
+                        {getResumeScreen()}
+                    </div>
+                </div>
 
         </div>
 
