@@ -3,7 +3,6 @@ import './Resume.css';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animation';
-import { duration } from '@mui/material';
 
 export default function Resume(props) {
 
@@ -50,14 +49,13 @@ export default function Resume(props) {
 
     const resumeBullets = [
 
-        {label: 'Education', logoSrc: 'education.svg'},
-        {label: 'Work History', logoSrc: 'work-history.svg'},
-        {label: 'Programming Skills', logoSrc: 'programming-skills.svg'},
-        {label: 'Projects', logoSrc: 'projects.svg'},
-        {label: 'Interests', logoSrc: 'interests.svg'},
+        { label: "Education", logoSrc: "graduation-svgrepo-com.svg" },
+        { label: "Work History", logoSrc: "work-history.svg" },
+        { label: "Programming Skills", logoSrc: "programming-skills.svg" },
+        { label: "Projects", logoSrc: "projects.svg" },
+        { label: "Interests", logoSrc: "interests.svg" },
 
-
-    ];
+      ];
 
     const programmingSkillDetails = [
 
