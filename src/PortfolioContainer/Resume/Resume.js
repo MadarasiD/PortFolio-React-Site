@@ -101,12 +101,12 @@ export default function Resume(props) {
             </span>
             <br />
             <span className='resume-description-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sint minus sequi temporibus aperiam asperiores distinctio sapiente, vitae quidem dolore consectetur culpa, quasi minima. Earum pariatur voluptas deserunt perferendis. Consequatur reprehenderit laudantium blanditiis, culpa recusandae veritatis repellat laborum vel, voluptate ipsa eveniet hic nisi quis voluptatem porro itaque id eius consequuntur! Illo debitis libero veniam ipsa iure laborum voluptas quo quis odio doloribus asperiores beatae non consectetur, voluptatibus dolorem at, assumenda adipisci est dolore dolorum natus quasi? Fugiat, unde? Ratione veniam et ab reiciendis aperiam nemo expedita, debitis fugiat quibusdam! Architecto earum veniam consectetur, libero harum dolorem odit, dolor nemo similique voluptate, fuga voluptatem! Fugit repellat, autem inventore expedita, suscipit praesentium repellendus, ipsa dolore laboriosam doloribus quasi blanditiis a! Veritatis molestiae qui cupiditate dolores excepturi sed esse necessitatibus, officia deleniti, voluptatem quas perspiciatis ut explicabo incidunt nisi similique unde. Sed ab delectus reiciendis omnis asperiores ea necessitatibus fuga repellendus dolores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 3 lorem150
             </span>
             <br />
             <span className='resume-description-text'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque voluptates, fugiat sed, vitae error suscipit unde aliquam impedit ex consequuntur expedita earum accusamus ipsam! lorem150
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 4
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia asperiores cupiditate magni animi enim vitae distinctio iusto. Cupiditate pariatur ullam reprehenderit distinctio veritatis alias a ducimus dignissimos et totam architecto eos aliquam vitae libero fuga placeat, aut dicta iste! Nemo voluptate delectus esse soluta blanditiis? Minima corporis culpa laudantium optio neque odio error aperiam, ea nulla at provident unde dolorum numquam rerum illum ducimus sint dolores ex, voluptates doloribus eaque hic, omnis explicabo. Quasi ex tempore delectus nulla dolorum sed cumque provident voluptatum, amet praesentium excepturi voluptates repudiandae, nisi repellendus iure explicabo! Harum odit veniam reprehenderit expedita, laborum incidunt quas nesciunt natus magnam, ullam similique eius. Dignissimos dolorem pariatur esse corrupti modi quidem, quos aliquam itaque voluptatum quis id adipisci saepe, repellat corporis inventore alias quam officia facilis harum architecto qui similique neque illum. Reprehenderit ducimus quos ullam recusandae unde tempora distinctio consequatur veritatis praesentium consequuntur quis optio aliquam consectetur quam ea ad, voluptatum vitae quidem vel pariatur ipsum iste cum voluptatibus. Quibusdam eveniet corporis aspernatur blanditiis vero possimus necessitatibus dolor perferendis sint eligendi doloribus, sunt culpa quas, dolore ipsam minima odit laborum quasi asperiores fugit eaque nobis. Hic incidunt rerum odit perferendis quos sapiente repellendus. Inventore, quos corrupti.
             </span>
         </div>,
         <div className="resume-screen-container programming-skills-container" key='programming-skills'>
@@ -148,30 +148,30 @@ export default function Resume(props) {
     const handleCarousal = (index) => {
         let offsetHeight = 360;
         let newCarousalOffset = {
-
             style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
-            
-        }
+          };
         setcarousalOffsetStyle(newCarousalOffset);
         setselectedBulletIndex(index);
     };
 
-    const getBullets = ()=> {
-        return resumeBullets.map((bullet, index)=>(
-            <div 
-            onClick={()=>handleCarousal(index)}
-            className={index === selectedBulletIndex ? 'bellet selected-bullet' : 'bullet'}
+    const getBullets = () => {
+        return resumeBullets.map((bullet, index) => (
+          <div
+            onClick={() => handleCarousal(index)}
+            className={
+              index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
+            }
             key={index}
-            >
-
-                <img 
-                src={require(`../../assets/Resume/${bullet.logoSrc}`).default} 
-                alt="bullet-logo" 
-                className="bullet-logo" />
-
-            </div>
-        ))
-    }
+          >
+            <img
+              className="bullet-logo"
+              src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+              alt="logo"
+            />
+            <span className="bullet-label">{bullet.label}</span>
+          </div>
+        ));
+      };
 
     const getResumeScreen = () => {
 
@@ -203,9 +203,8 @@ export default function Resume(props) {
                         </div>
                     </div>
 
-                    <div className="resume-bullet-detail">
-                        {getResumeScreen()}
-                    </div>
+                    <div className="resume-bullet-details">{getResumeScreen()}</div>
+
                 </div>
 
         </div>
