@@ -49,7 +49,7 @@ export default function Resume(props) {
 
     const resumeBullets = [
 
-        { label: "Education", logoSrc: "graduation-svgrepo-com.svg" },
+        { label: "Education", logoSrc: "edu.svg" },
         { label: "Work History", logoSrc: "work-history.svg" },
         { label: "Programming Skills", logoSrc: "programming-skills.svg" },
         { label: "Projects", logoSrc: "projects.svg" },
@@ -170,6 +170,7 @@ export default function Resume(props) {
           </div>
         ));
       };
+    
 
     const getResumeScreen = () => {
 
