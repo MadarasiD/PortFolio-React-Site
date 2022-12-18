@@ -4,7 +4,7 @@ import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animation';
 
-export default function Resume(props) {
+const Resume = (props) => {
 
     const [ selectedBulletIndex, setselectedBulletIndex] = useState(0);
     const [ carousalOffsetStyle, setcarousalOffsetStyle ] = useState({});
@@ -44,6 +44,8 @@ export default function Resume(props) {
       
     }
 
+
+    /*A CÍMKÉK STATIKUS FOLYTATÁSI ADATAI */
     const resumeBullets = [
 
         { label: "Education", logoSrc: "education.svg" },
@@ -56,11 +58,15 @@ export default function Resume(props) {
 
     const programmingSkillDetails = [
 
-        {skill: 'HTML', ratingPercentage: 70},
-        {skill: 'CSS', ratingPercentage: 70},
-        {skill: 'Bootstrap', ratingPercentage: 70},
-        {skill: 'SASS / SCSS', ratingPercentage: 70},
-        {skill: 'Javascript', ratingPercentage: 70},
+        { skill: "HTML", ratingPercentage: 85 },
+        { skill: "CSS", ratingPercentage: 85 },
+        { skill: "Javascript", ratingPercentage: 85 },
+        { skill: "Bootstrap", ratingPercentage: 89 },
+        { skill: "Node JS", ratingPercentage: 89 },
+        { skill: "REACT JS", ratingPercentage: 70 },
+        { skill: "Hosting - Firebase", ratingPercentage: 80 },
+        { skill: "SEO", ratingPercentage: 80 },
+        { skill: "JQUERY", ratingPercentage: 80 },
 
 
     ];
@@ -68,75 +74,128 @@ export default function Resume(props) {
     const projectDetails = [
 
         {
-            title: 'Personal Portfolio Website',
-            duration: { fromDate: '2020', toDate: '2021'},
-            description: 'My portfolio website where I can introduce myself and present my projects in one place',
-            subHeading: 'Technologies Used: React JS'
-        }
-
+            title: "Personal Portfolio Website",
+            duration: { fromDate: "2020", toDate: "2021" },
+            description:
+              "A Personal Portfolio website to showcase all my details and projects at one place.",
+            subHeading: "Technologies Used: React JS, Bootsrap",
+          },
+          {
+            title: "Mobile E-shop ",
+            duration: { fromDate: "2020", toDate: "2021" },
+            description:
+              "An ecommerce application designed to sell products online wth payment system integration",
+            subHeading:
+              "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+          },
+          {
+            title: "Ecommerce Website ",
+            duration: { fromDate: "2020", toDate: "2021" },
+            description:
+              "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+            subHeading:
+              "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+          },
     ];
 
     const resumeDetails = [
 
         <div className="resume-screen-container">
             <ResumeHeading heading={'Apáczai Csere János primary school'} fromDate={'2002'} toDate={'2014'}/>
-        </div>,
-        <div className="resume-screen-container">
+        
             <ResumeHeading heading={'Madarasi'} subHeading={'Frontend Developer'} fromDate={'2022'} toDate={'2022'}/>
-        </div>,
-        <div className='experience-description'>
+        
             <span className="resume-description-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, inventore! 1
             </span>
         </div>,
 
-        <div className="experience-description">
-            <span className="resume-description-text">
-                Experience - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione velit alias id nulla ipsa! Maxime quasi quidem qui rerum earum. 2
-            </span>
-            <br />
-            <span className='resume-description-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 3 lorem150
-            </span>
-            <br />
-            <span className='resume-description-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque voluptates, fugiat sed, vitae error suscipit unde aliquam impedit ex consequuntur expedita earum accusamus ipsam! lorem150
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, deserunt et saepe maiores dolorum deleniti necessitatibus nostrum corporis sed? Vel quas praesentium blanditiis ipsum sed quis, enim numquam accusantium! 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia asperiores cupiditate magni animi enim vitae distinctio iusto. Cupiditate pariatur ullam reprehenderit distinctio veritatis alias a ducimus dignissimos et totam architecto eos aliquam vitae libero fuga placeat, aut dicta iste! Nemo voluptate delectus esse soluta blanditiis? Minima corporis culpa laudantium optio neque odio error aperiam, ea nulla at provident unde dolorum numquam rerum illum ducimus sint dolores ex, voluptates doloribus eaque hic, omnis explicabo. Quasi ex tempore delectus nulla dolorum sed cumque provident voluptatum, amet praesentium excepturi voluptates repudiandae, nisi repellendus iure explicabo! Harum odit veniam reprehenderit expedita, laborum incidunt quas nesciunt natus magnam, ullam similique eius. Dignissimos dolorem pariatur esse corrupti modi quidem, quos aliquam itaque voluptatum quis id adipisci saepe, repellat corporis inventore alias quam officia facilis harum architecto qui similique neque illum. Reprehenderit ducimus quos ullam recusandae unde tempora distinctio consequatur veritatis praesentium consequuntur quis optio aliquam consectetur quam ea ad, voluptatum vitae quidem vel pariatur ipsum iste cum voluptatibus. Quibusdam eveniet corporis aspernatur blanditiis vero possimus necessitatibus dolor perferendis sint eligendi doloribus, sunt culpa quas, dolore ipsam minima odit laborum quasi asperiores fugit eaque nobis. Hic incidunt rerum odit perferendis quos sapiente repellendus. Inventore, quos corrupti.
-            </span>
-        </div>,
-        <div className="resume-screen-container programming-skills-container" key='programming-skills'>
-            {programmingSkillDetails.map((skill, index)=> (
-                <div className="skill-parent" key="index">
-                    <div className="heading-bullet"></div>
-                    <span> {skill.skill} </span>
-                    <div className="skill-percentage">
-                        <div style={{width: skill.ratingPercentage + "%"}} className='active-precentage'>
+    /* Munka tapasztalat */
+    <div className="resume-screen-container" key="work-experience">
+      <div className="experience-container">
 
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </div>,
+        <ResumeHeading
+        heading={"Madarasi Portfolio"}
+        subHeading={"Frontend Developer"}
+        fromDate={2022}
+        toDate={2022}
+        />
 
-        <div className="resume-screen-container" key="projects">
-            {projectDetails.map((projectDetails, index) => (
-                <ResumeHeading 
-                    key={index}
-                    heading={projectDetails.subHeading}
-                    description={projectDetails.description}
-                    fromDate={projectDetails.duration.fromDate}
-                    toDate={projectDetails.duration.toDate}
-                    />
-            ))}
-        </div>,
+            <div className="experience-description">
+                <span className="resume-description-text">
+                I don't work in the profession at the moment, but I study as a hobby when I have the time.
+                </span>
+            </div>
 
-        <div className="resume-screen-container" key="interests">
-            <ResumeHeading
-                heading='Teaching'
-                description="lorem5"
+            <div className="experience-description">
+                <span className="resume-description-text">
+                I don't work in the profession at the moment, but I study as a hobby when I have the time.
+                </span>
+                <br />
+                <span className="resume-description-text">
+                    - Integrated the web app with backend services to create new user
+                    onboarding application with dynamic form content.{" "}
+                </span>
+                <br />
+                <span className="resume-description-text">
+                    - I stretch my mental capacity to develope UI as per the given
+                designs.
+                </span>
+                <br />
 
-            />
+            </div>
+
         </div>
+    </div>,
+
+    /* programozási erősségek */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="programming-skills"
+    >
+      {programmingSkillDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>,
+
+        /* PROJECTS */
+        <div className="resume-screen-container" key="projects">
+        {projectDetails.map((projectsDetails, index) => (
+          <ResumeHeading
+            key={index}
+            heading={projectsDetails.title}
+            subHeading={projectsDetails.subHeading}
+            description={projectsDetails.description}
+            fromDate={projectsDetails.duration.fromDate}
+            toDate={projectsDetails.duration.toDate}
+          />
+        ))}
+      </div>,
+
+          /* Interests */
+        <div className="resume-screen-container" key="interests">
+        <ResumeHeading
+        heading="Teaching"
+        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        />
+        <ResumeHeading
+        heading="Music"
+        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+         />
+        <ResumeHeading
+        heading="Competitive Gaming"
+        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        />
+  </div>,
 
     ]
 
@@ -183,30 +242,28 @@ export default function Resume(props) {
 
     }
 
-  return (
-    <div className='resume-container screen-container' id={props.id || ''}>
-
-        <div className="resume-content">
-
-                <ScreenHeading title={'Resume'} subHeading={'My biographical description'} />
-
-                <div className="resume-card">
-                    <div className="resume-bullets">
-                        <div className="bullet-container">
-                            <div className="bullet-icons">
-
-                            </div>
-
-                            <div className="bullets"> {getBullets()} </div>
-                        </div>
-                    </div>
-
-                    <div className="resume-bullet-details">{getResumeScreen()}</div>
-
+    return (
+        <div
+          className="resume-container screen-container fade-in"
+          id={props.id || ""}
+        >
+          <div className="resume-content">
+            <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+            <div className="resume-card">
+              <div className="resume-bullets">
+                <div className="bullet-container">
+                  <div className="bullet-icons"></div>
+                  <div className="bullets">{getBullets()}</div>
                 </div>
-
+              </div>
+    
+              <div className="resume-bullet-details">{getResumeScreen()}</div>
+            </div>
+          </div>
         </div>
+      );
+    
+};
 
-    </div>
-  )
-}
+export default Resume;
+
