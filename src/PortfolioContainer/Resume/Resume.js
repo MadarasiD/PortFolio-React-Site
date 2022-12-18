@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Resume.css';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
@@ -19,30 +19,29 @@ const Resume = (props) => {
       const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     
 
-    const ResumeHeading = (props) => {
+      const ResumeHeading = (props) => {
         return (
-            <div className="resume-heading">
-              <div className="resume-main-heading">
-                <div className="heading-bullet"></div>
-                <span>{props.heading ? props.heading : ""}</span>
-                {props.fromDate && props.toDate ? (
-                  <div className="heading-date">
-                    {props.fromDate + "-" + props.toDate}
-                  </div>
-                ) : (
-                  <div></div>
-                )}
-              </div>
-              <div className="resume-sub-heading">
-                <span>{props.subHeading ? props.subHeading : ""}</span>
-              </div>
-              <div className="resume-heading-description">
-                <span>{props.description ? props.description : ""}</span>
-              </div>
+          <div className="resume-heading">
+            <div className="resume-main-heading">
+              <div className="heading-bullet"></div>
+              <span>{props.heading ? props.heading : ""}</span>
+              {props.fromDate && props.toDate ? (
+                <div className="heading-date">
+                  {props.fromDate + "-" + props.toDate}
+                </div>
+              ) : (
+                <div></div>
+              )}
             </div>
-          );
-      
-    }
+            <div className="resume-sub-heading">
+              <span>{props.subHeading ? props.subHeading : ""}</span>
+            </div>
+            <div className="resume-heading-description">
+              <span>{props.description ? props.description : ""}</span>
+            </div>
+          </div>
+        );
+      };
 
 
     /*A CÍMKÉK STATIKUS FOLYTATÁSI ADATAI */
@@ -96,6 +95,7 @@ const Resume = (props) => {
             subHeading:
               "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
           },
+          
     ];
 
     const resumeDetails = [
@@ -219,28 +219,32 @@ const Resume = (props) => {
           >
             <img
               className="bullet-logo"
-              src={require(`./${bullet.logoSrc}`)}
-              alt="logo"
+              src={require(`../../assets/Resume/${bullet.logoSrc}`)}
+              alt="B"
             />
-
-
             <span className="bullet-label">{bullet.label}</span>
           </div>
         ));
       };
     
 
-    const getResumeScreen = () => {
+     const getResumeScreens = () => {
+    return (
+      <div
+        style={carousalOffsetStyle.style}
+        className="resume-details-carousal"
+      >
+        {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+      </div>
+    );
+  };
 
-        return (
-
-            <div className="resume-details-carousal" style={carousalOffsetStyle.style}>
-                {resumeDetails.map((ResumeDetail) => ResumeDetail)}
-            </div>
-
-        )
-
-    }
+    useEffect(() => {
+        return () => {
+          /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+          fadeInSubscription.unsubscribe();
+        };
+      }, [fadeInSubscription]);
 
     return (
         <div
@@ -257,7 +261,7 @@ const Resume = (props) => {
                 </div>
               </div>
     
-              <div className="resume-bullet-details">{getResumeScreen()}</div>
+              <div className="resume-bullet-details">{getResumeScreens()}</div>
             </div>
           </div>
         </div>
