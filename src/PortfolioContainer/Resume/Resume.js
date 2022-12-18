@@ -49,7 +49,7 @@ export default function Resume(props) {
 
     const resumeBullets = [
 
-        { label: "Education", logoSrc: "edu.svg" },
+        { label: "Education", logoSrc: "education.svg" },
         { label: "Work History", logoSrc: "work-history.svg" },
         { label: "Programming Skills", logoSrc: "programming-skills.svg" },
         { label: "Projects", logoSrc: "projects.svg" },
@@ -163,9 +163,11 @@ export default function Resume(props) {
           >
             <img
               className="bullet-logo"
-              src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+              src={require(`./${bullet.logoSrc}`)}
               alt="logo"
             />
+
+
             <span className="bullet-label">{bullet.label}</span>
           </div>
         ));
