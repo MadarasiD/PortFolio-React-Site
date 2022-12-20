@@ -35,9 +35,14 @@ export default function HomeProjects(props) {
                                 <div className="project-comment">
                                     <p>
                                         <i className="fa fa-quote-left"/>
-                                        tell us something about your project
+                                        what is the name of the project
                                         <i className="fa fa-quote-right"/>
                                     </p>
+                                </div>
+                                <div className="client-info">
+                                    <img src={require('../../assets/Projects/LoginForm.jpg')} alt="Login Form" />
+                                    <a href="https://12-login-form.vercel.app/" target='_blank'>click to see</a>
+                                tell us something about your project
                                 </div>
                             </div>
                         </div>
