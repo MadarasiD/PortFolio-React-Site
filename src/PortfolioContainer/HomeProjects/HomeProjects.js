@@ -107,6 +107,61 @@ export default function HomeProjects(props) {
                             </div>
                         </div>
                     </OwlCarousel>
+
+                    <OwlCarousel className='owl-carousel' id='projects-carousel' {...options}>
+
+                        <div className="col-lg-12">
+                            <div className="project-item">
+                                <div className="project-comment">
+                                    <p>
+                                        
+                                        3D Background boxes
+                                        
+                                    </p>
+                                </div>
+                                <div className="project-info">
+                                    <img src={require('../../assets/Projects/3dboxes.jpg')} alt="Login Form" />
+                                    <a href="https://3-d-background-boxes.vercel.app/" target='_blank'>click to see</a>
+                                    <h5>Click the Magic button and enjoy the magic</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                            <div className="project-item">
+                                <div className="project-comment">
+                                    <p>
+                                      
+                                        Form Wave Animation
+                                        
+                                    </p>
+                                </div>
+                                <div className="project-info">
+                                    <img src={require('../../assets/Projects/formwave.jpg')} alt="Login Form" />
+                                    <a href="https://form-wave-animation-rust.vercel.app/" target='_blank'>click to see</a>
+                                    <h5>Login form Wave animation</h5>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="col-lg-12">
+                            <div className="project-item">
+                                <div className="project-comment">
+                                    <p>
+                                        
+                                        Javascript Dark Theme
+                                        
+                                    </p>
+                                </div>
+                                <div className="project-info">
+                                    <img src={require('../../assets/Projects/darktheme.jpg')} alt="Login Form" />
+                                    <a href="https://dark-theme-javascript.vercel.app/" target='_blank'>click to see</a>
+                                    <h5>If you click on the mark in the middle, the background will be dark and the font color will be light</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </OwlCarousel>
                 </div>
             </div>
         </section>
