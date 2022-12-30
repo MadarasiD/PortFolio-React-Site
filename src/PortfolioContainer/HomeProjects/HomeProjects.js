@@ -82,7 +82,7 @@ export default function HomeProjects(props) {
                                     </p>
                                 </div>
                                 <div className="project-info">
-                                    <img src={require('../../assets/Projects/Parallax.jpg')} alt="Login Form" />
+                                    <img src={require('../../assets/Projects/Parallax.jpg')} alt="Parallax" />
                                     <a href="https://parallax-sable.vercel.app/" target='_blank'>click to see</a>
                                     <h5>Multi-layer rendering, where layers in the background move more slowly for the viewer than those in the foreground, creating a three-dimensional effect</h5>
                                 </div>
@@ -100,7 +100,7 @@ export default function HomeProjects(props) {
                                     </p>
                                 </div>
                                 <div className="project-info">
-                                    <img src={require('../../assets/Projects/darktheme.jpg')} alt="Login Form" />
+                                    <img src={require('../../assets/Projects/darktheme.jpg')} alt="Javascript Dark Theme" />
                                     <a href="https://dark-theme-javascript.vercel.app/" target='_blank'>click to see</a>
                                     <h5>If you click on the mark in the middle, the background will be dark and the font color will be light</h5>
                                 </div>
@@ -120,7 +120,7 @@ export default function HomeProjects(props) {
                                     </p>
                                 </div>
                                 <div className="project-info">
-                                    <img src={require('../../assets/Projects/3dboxes.jpg')} alt="Login Form" />
+                                    <img src={require('../../assets/Projects/3dboxes.jpg')} alt="3D Background boxes" />
                                     <a href="https://3-d-background-boxes.vercel.app/" target='_blank'>click to see</a>
                                     <h5>Click the Magic button and enjoy the magic</h5>
                                 </div>
@@ -137,7 +137,7 @@ export default function HomeProjects(props) {
                                     </p>
                                 </div>
                                 <div className="project-info">
-                                    <img src={require('../../assets/Projects/formwave.jpg')} alt="Login Form" />
+                                    <img src={require('../../assets/Projects/formwave.jpg')} alt="Form Wave Animation" />
                                     <a href="https://form-wave-animation-rust.vercel.app/" target='_blank'>click to see</a>
                                     <h5>Login form Wave animation</h5>
                                 </div>
@@ -150,18 +150,74 @@ export default function HomeProjects(props) {
                                 <div className="project-comment">
                                     <p>
                                         
-                                        Javascript Dark Theme
+                                        Rotating Navigation
                                         
                                     </p>
                                 </div>
                                 <div className="project-info">
-                                    <img src={require('../../assets/Projects/darktheme.jpg')} alt="Login Form" />
-                                    <a href="https://dark-theme-javascript.vercel.app/" target='_blank'>click to see</a>
-                                    <h5>If you click on the mark in the middle, the background will be dark and the font color will be light</h5>
+                                    <img src={require('../../assets/Projects/rotatingnav.jpg')} alt="Rotating Navigation" />
+                                    <a href="https://rotating-navigaton.vercel.app/" target='_blank'>click to see</a>
+                                    <h5>The navigation is hidden under a rotated image</h5>
                                 </div>
                             </div>
                         </div>
                     </OwlCarousel>
+
+                    <OwlCarousel className='owl-carousel' id='projects-carousel' {...options}>
+
+                        <div className="col-lg-12">
+                            <div className="project-item">
+                                <div className="project-comment">
+                                    <p>
+                                        
+                                        Split Landing Page
+                                        
+                                    </p>
+                                </div>
+                                <div className="project-info">
+                                    <img src={require('../../assets/Projects/split.jpg')} alt="Split Landing Page" />
+                                    <a href="https://split-landing-page-one.vercel.app/" target='_blank'>click to see</a>
+                                    <h5>Split Landing page with a little effect</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                            <div className="project-item">
+                                <div className="project-comment">
+                                    <p>
+                                      
+                                    In progress
+                                        
+                                    </p>
+                                </div>
+                                <div className="project-info">
+                                    <img  alt="In progress" />
+                                    <a href="#" target='_blank'>click to see</a>
+                                    <h5>In progress</h5>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="col-lg-12">
+                            <div className="project-item">
+                                <div className="project-comment">
+                                    <p>
+                                        
+                                    In progress
+                                        
+                                    </p>
+                                </div>
+                                <div className="project-info">
+                                    <img  alt="In progress" />
+                                    <a href="#" target='_blank'>click to see</a>
+                                    <h5>In progress</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </OwlCarousel>
+
                 </div>
             </div>
         </section>
