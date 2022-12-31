@@ -25,7 +25,7 @@ export default function HomeProjects(props) {
             animateOut: "bounceOutRight",
             dots: true,
             autoplay: true,
-            smartSpeed: 1000,
+            smartSpeed: 750,
             responsive: {
                 0:{
                     items: 1,  
